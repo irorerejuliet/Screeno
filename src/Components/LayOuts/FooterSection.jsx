@@ -8,7 +8,7 @@ import { MdOutlineMail } from 'react-icons/md';
 const FooterSection = () => {
   return (
     <>
-      <div className="container mx-auto my-20 flex gap-40 ">
+      <div className="container mx-auto my-20 md:flex flex-row gap-40 md:px-0 px-5">
         <div className="space-y-5">
           <img src="/images/footerLogo.png" alt="logo" />
           <p className="text-base font-normal">Streaming and Video platform</p>
@@ -35,7 +35,7 @@ const FooterSection = () => {
           </div>
         </div>
         <div className=" ">
-          <h3 className="text-lg font-semibold pb-6">Get in touch</h3>
+          <h3 className="text-lg font-semibold pb-6 md:pt-0 pt-5">Get in touch</h3>
           <form className="space-y-4 flex- flex-col  w-[350px]">
             <input
               type="text"
@@ -60,7 +60,7 @@ const FooterSection = () => {
           </form>
         </div>
       </div>
-      <p className="text-center mx-auto text-gray-400 text-xs font-bold py-8 border border-b-2">
+      <p className="text-center mx-auto text-gray-400 text-xs font-normal py-8 border border-b-2">
         ©2022 Screeno Ltd, All rights reserved
       </p>
     </>
