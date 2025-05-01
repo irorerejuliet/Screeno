@@ -2,7 +2,7 @@ import { IoMdMenu } from "react-icons/io";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import Menu from "./Menu";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 
 
@@ -21,9 +21,11 @@ const Navbar = () => {
           <Menu menuStyle={"flex  items-center space-x-6 uppercase"} />
         </div>
         <div className="hidden md:block">
-          <button className="px-6 py-2 bg-blue-600  rounded-[50px]">
-            Create Account
-          </button>
+          <Link to="/auth/register">
+            <button className="px-6 py-2 bg-blue-600  rounded-[50px]">
+              Create Account
+            </button>
+          </Link>
         </div>
         <button className="md:hidden block">
           <IoMdMenu fontSize={30} onClick={toggleMenu} />

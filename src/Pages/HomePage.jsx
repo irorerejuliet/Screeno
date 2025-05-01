@@ -20,6 +20,7 @@ const HomePage = () => {
                 <button className="bg-blue-700 text-sm font-light py-2 px-6 rounded-[40px]">
                   Contact Us
                 </button>
+                
                 <button className="bg-black border border-gray-400 text-sm font-light py-2 px-10 rounded-[50px]">
                   Login
                 </button>
